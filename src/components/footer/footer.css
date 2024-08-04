@@ -1,0 +1,22 @@
+.link_footer {
+    position: relative;
+}
+
+.link_footer:hover {
+    color: violet
+}
+
+.link_footer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.4s;
+}
+
+.link_footer:hover::after {
+    width: 100%;
+}

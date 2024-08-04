@@ -1,0 +1,15 @@
+.title_befifit {
+    position: relative;
+}
+
+.title_befifit::before {
+    content: "";
+    display: block;
+    width: 15%;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #00000015;
+    position: absolute;
+}

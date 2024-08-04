@@ -1,0 +1,20 @@
+li.active,
+.has-bg:hover {
+    color: white;
+    background-color: blue;
+}
+
+.menu_link li,
+.session_header {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: thin;
+}
+
+.menu_link li.inactive:hover {
+    background-color: rgb(228 228 231);
+}
+
+.session_header:hover {
+    background-color: rgba(45, 224, 224, 0.123);
+}
