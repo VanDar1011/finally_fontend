@@ -1,5 +1,5 @@
-import React from "react";
+import MindMapPage from "@/components/mindmap/MindMapPage";
 
 export default function MindMap() {
-  return <div>page</div>;
+  return <MindMapPage />;
 }
