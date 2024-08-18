@@ -1,0 +1,118 @@
+{
+  "users":[
+    {
+      "id": 1,
+      "mindMapData":[
+        {
+          "idMap": 1,
+          "title":"Mind Map chưa có tên",
+          "createAt":"2021-11-11 11:11:11",
+          "data":{ 
+            "nodes": [
+            {
+              "id": "0",
+              "type": "input",
+              "position": {
+                "x": 600,
+                "y": 10
+              },
+              "data": {
+                "label": "Parent"
+              },
+              "origin": [
+                0.5,
+                0
+              ]
+            }
+          ],
+          "edges": [ 
+          ]
+          }
+        },
+        {
+          "idMap": 2,
+          "title":"Mind Map chưa có tên",
+          "createAt":"2021-11-11 11:11:11",
+          "data":{ 
+            "nodes": [
+            {
+              "id": "0",
+              "type": "input",
+              "position": {
+                "x": 600,
+                "y": 10
+              },
+              "data": {
+                "label": "Parent"
+              },
+              "origin": [
+                0.5,
+                0
+              ]
+            }
+          ],
+          "edges": [ 
+          ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "mindMapData":[
+        {
+          "idMap": 1,
+          "title":"Mind Map chưa có tên",
+          "createAt":"2021-11-11 11:11:11",
+          "data":{ 
+            "nodes": [
+            {
+              "id": "0",
+              "type": "input",
+              "position": {
+                "x": 600,
+                "y": 10
+              },
+              "data": {
+                "label": "Parent"
+              },
+              "origin": [
+                0.5,
+                0
+              ]
+            }
+          ],
+          "edges": [ 
+          ]
+          }
+        },
+        {
+          "idMap": 2,
+          "title":"Mind Map chưa có tên",
+          "createAt":"2021-11-11 11:11:11",
+          "data":{ 
+            "nodes": [
+            {
+              "id": "0",
+              "type": "input",
+              "position": {
+                "x": 600,
+                "y": 10
+              },
+              "data": {
+                "label": "Parent"
+              },
+              "origin": [
+                0.5,
+                0
+              ]
+            }
+          ],
+          "edges": [ 
+          ]
+          }
+        }
+      ]
+    }
+  ]
+}
