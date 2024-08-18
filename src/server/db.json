@@ -6,6 +6,7 @@
         {
           "idMap": 1,
           "title":"Mind Map chưa có tên",
+          "description":"Chưa có mô tả",
           "createAt":"2021-11-11 11:11:11",
           "data":{ 
             "nodes": [
@@ -32,6 +33,7 @@
         {
           "idMap": 2,
           "title":"Mind Map chưa có tên",
+          "description":"Chưa có mô tả",
           "createAt":"2021-11-11 11:11:11",
           "data":{ 
             "nodes": [
@@ -63,6 +65,7 @@
         {
           "idMap": 1,
           "title":"Mind Map chưa có tên",
+          "description":"Chưa có mô tả",
           "createAt":"2021-11-11 11:11:11",
           "data":{ 
             "nodes": [
@@ -89,6 +92,7 @@
         {
           "idMap": 2,
           "title":"Mind Map chưa có tên",
+          "description":"Chưa có mô tả",
           "createAt":"2021-11-11 11:11:11",
           "data":{ 
             "nodes": [
