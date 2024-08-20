@@ -17,14 +17,19 @@ export const mindmapApi = createApi({
           : [{ type: "MindMap", id: "LIST" }],
     }),
     getMindMapById: builder.query({
-      query: (id) => `users?id=${id}`,
-      providesTags: (result) =>
-        result
-          ? [
-              ...result.map(({ id }) => ({ type: "MindMap", id })),
-              { type: "MindMap", id: "LIST" },
-            ]
-          : [{ type: "MindMap", id: "LIST" }],
+      query: (id) => `users/${id}`,
+      providesTags: (result) => result && [{ type: "MindMap", id: "LIST" }],
+    }),
+    updateMindMapById: builder.mutation({
+      query: ({ id, data }) => ({
+        url: `users/${id}`,
+        method: "PUT",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }),
+      invalidatesTags: [{ type: "MindMap", id: "LIST" }],
     }),
   }),
 });

@@ -1,9 +1,8 @@
-import React from "react";
-
-export default function ButtonDeleteMindMap() {
+"use client";
+export default function ButtonDeleteMindMap({ onClick }) {
   return (
     <div>
-      <button>
+      <button className="text-red-500" onClick={onClick}>
         <i className="fa-solid fa-trash"></i>
       </button>
     </div>

@@ -1,8 +1,8 @@
 "use client";
-export default function ButtonEditMindMap() {
+export default function ButtonEditMindMap({ onClick }) {
   return (
     <div>
-      <button>
+      <button className="text-cyan-500" onClick={onClick}>
         <i className="fa-solid fa-pen-to-square"></i>
       </button>
     </div>

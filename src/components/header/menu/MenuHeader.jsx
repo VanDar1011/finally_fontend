@@ -5,6 +5,7 @@ import "./styleMenuHeader.css";
 import SessionHeader from "../session/SessionHeader";
 export default async function MenuHeader() {
   const session = await getSession();
+  // console.log("session", session);
   return (
     <div className="menu_header">
       <ul className="menu_link flex gap-8">

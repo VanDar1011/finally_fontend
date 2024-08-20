@@ -29,12 +29,15 @@ export default function AddNode({
   setEdges,
   setNodes,
 }) {
+  // console.log("nodesItem after", nodes);
+  // console.log("edgesItem after", edges);
   const [variant, setVariant] = useState("dots");
   const reactFlowWrapper = useRef(null);
   const connectingNodeId = useRef(null);
 
   // console.log("nodes", nodes, "edges", edges);
   const { screenToFlowPosition } = useReactFlow();
+
   const onConnect = useCallback((params) => {
     // reset the start node on connections
     connectingNodeId.current = null;
@@ -54,7 +57,7 @@ export default function AddNode({
       if (targetIsPane) {
         // we need to remove the wrapper bounds, in order to get the correct position
         const idNode = uuidv4();
-        console.log(idNode);
+        // console.log(idNode);
         const newNode = {
           id: idNode,
           position: screenToFlowPosition({

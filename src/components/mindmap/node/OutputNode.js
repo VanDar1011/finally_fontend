@@ -1,13 +1,24 @@
 import { useCallback, useState } from "react";
-import { Handle, Position } from "@xyflow/react";
+import { Handle, Position, useReactFlow } from "@xyflow/react";
 import "./styleOutputNode.scss";
-function OutputNode({ data, isConnectable }) {
+function OutputNode(data) {
+  // console.log("data", data);
+  const { setNodes } = useReactFlow();
   const [edit, setEdit] = useState(false);
-  const [valueText, setValue] = useState(data.label);
-  const onChange = useCallback((evt) => {
-    // console.log(evt.target.value);
-    setValue(evt.target.value);
-  }, []);
+  const onChange = useCallback(
+    (evt) => {
+      console.log("change value of node");
+      setNodes((nds) =>
+        nds.map((nd) => {
+          if (nd.id === data.id) {
+            return { ...nd, data: { ...nd.data, label: evt.target.value } };
+          }
+          return nd;
+        })
+      );
+    },
+    [setNodes, data.id]
+  );
   const handleClick = useCallback(() => {
     setEdit(true);
   }, []);
@@ -23,23 +34,23 @@ function OutputNode({ data, isConnectable }) {
       <Handle
         type="target"
         position={Position.Top}
-        isConnectable={isConnectable}
+        isConnectable={data.isConnectable}
       />
       {edit ? (
         <input
           id="text"
           name="text"
           onChange={onChange}
-          value={valueText}
+          defaultValue={data.data.label}
           className="nodrag h-full w-full text-center text-wrap"
         />
       ) : (
-        <div>{valueText}</div>
+        <div>{data.data.label}</div>
       )}
       <Handle
         type="source"
         position={Position.Bottom}
-        isConnectable={isConnectable}
+        isConnectable={data.isConnectable}
       />
     </div>
   );

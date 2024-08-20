@@ -9,7 +9,7 @@ export const nodeApi = createApi({
   tagTypes: ["Nodes"],
   endpoints: (builder) => ({
     getNodes: builder.query({
-      query: (name) => `nodes`,
+      query: () => `nodes`,
       providesTags: (result) =>
         result
           ? [
