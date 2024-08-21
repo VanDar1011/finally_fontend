@@ -3,7 +3,6 @@ import { mindmapApi } from "@/redux/services/mindmap";
 import { useEffect, useState } from "react";
 import ItemMindMap from "./ItemMindMap";
 export default function ListMindMap({ sub }) {
-  // console.log("sub", sub);
   const {
     data: mindmap,
     isLoadingMindMap,
@@ -12,11 +11,11 @@ export default function ListMindMap({ sub }) {
   const [mindmapData, setMindmapData] = useState([]);
   useEffect(() => {
     if (!isLoadingMindMap && !isErrorMindMap && mindmap) {
-      setMindmapData(mindmap.mindMapData);
+      setMindmapData(mindmap?.mindMapData);
     }
   }, [mindmap, isLoadingMindMap, isErrorMindMap]);
   if (isLoadingMindMap) return <div>Loading...</div>;
-  if (isErrorMindMap) return <div>Error</div>;
+  if (isErrorMindMap) return <div></div>;
   return (
     <>
       <div className="flex items-center py-5 font-bold text-center">
@@ -28,9 +27,10 @@ export default function ListMindMap({ sub }) {
         <div className="w-1/4">Hành động</div>
       </div>
       <div className="listMindMap flex flex-col gap-2">
-        {mindmapData?.map((item) => (
-          <ItemMindMap item={item} key={item.idMap} />
-        ))}
+        {mindmapData &&
+          mindmapData?.map((item) => (
+            <ItemMindMap item={item} key={item.idMap} />
+          ))}
       </div>
     </>
   );

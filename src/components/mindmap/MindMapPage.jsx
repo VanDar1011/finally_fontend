@@ -2,14 +2,14 @@
 import { useEffect, useState } from "react";
 import MindMapFlow from "./MindMapFlow";
 import { mindmapApi } from "@/redux/services/mindmap";
-export default function MindMapPage({ id }) {
-  const userId = "google-oauth2|102321598521810646645";
+export default function MindMapPage({ id, sub }) {
+  // const userId = "google-oauth2|102321598521810646645";
   // console.log("id", id);
   const {
     data: mindmap,
     isLoadingMindMap,
     isErrorMindMap,
-  } = mindmapApi.useGetMindMapByIdQuery(userId);
+  } = mindmapApi.useGetMindMapByIdQuery(sub);
   const [dataNodes, setDataNodes] = useState([]);
   const [dataEdges, setDataEdges] = useState([]);
   const [titleMindMap, setTitleMindMap] = useState("");
@@ -33,7 +33,7 @@ export default function MindMapPage({ id }) {
   if (isLoadingMindMap) return <div>Loading...</div>;
   if (isErrorMindMap) return <div>Error</div>;
   return (
-    <div className="h-screen w-full mx-auto">
+    <div className="h-full w-full mx-auto">
       <div className="title_min-map text-center text-2xl font-bold">
         Mind Map
       </div>
@@ -56,7 +56,7 @@ export default function MindMapPage({ id }) {
       <MindMapFlow
         nodesItem={dataNodes}
         edgesItem={dataEdges}
-        userId={userId}
+        userId={sub}
         id={id}
         title={titleMindMap}
         description={descriptionMindMap}

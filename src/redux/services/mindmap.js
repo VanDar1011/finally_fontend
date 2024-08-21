@@ -7,7 +7,7 @@ export const mindmapApi = createApi({
   tagTypes: ["MindMap"],
   endpoints: (builder) => ({
     getMindMaps: builder.query({
-      query: () => `users`,
+      query: () => `/users`,
       providesTags: (result) =>
         result
           ? [
@@ -17,12 +17,16 @@ export const mindmapApi = createApi({
           : [{ type: "MindMap", id: "LIST" }],
     }),
     getMindMapById: builder.query({
-      query: (id) => `users/${id}`,
-      providesTags: (result) => result && [{ type: "MindMap", id: "LIST" }],
+      query: (id) => `/users/${id}`,
+      // providesTags: (result) => result && [{ type: "MindMap", id: "LIST" }],
+      providesTags: (result) =>
+        result && Object.keys(result).length > 0
+          ? [{ type: "MindMap", id: "LIST" }]
+          : [{ type: "MindMap", id: "NOT_FOUND" }],
     }),
     updateMindMapById: builder.mutation({
       query: ({ id, data }) => ({
-        url: `users/${id}`,
+        url: `/users/${id}`,
         method: "PUT",
         body: JSON.stringify(data),
         headers: {

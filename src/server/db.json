@@ -3,373 +3,10 @@
     {
       "mindMapData": [
         {
-          "idMap": "bef653a6-86c7-4bfe-9cfc-354369258361",
-          "createAt": "2021-11-11 11:11:11",
+          "idMap": "585d57f1-5bb0-4447-9693-32b9b9ef0db9",
+          "createAt": "24/08/21 16-07-14",
           "status": "public",
-          "title": "Chưa có tiêu đề update",
-          "description": "Chưa có mô tả update",
-          "data": {
-            "nodes": [
-              {
-                "id": "0",
-                "type": "input",
-                "position": {
-                  "x": 600,
-                  "y": 10
-                },
-                "data": {
-                  "label": "Parent"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                },
-                "selected": false
-              },
-              {
-                "id": "3d2f9a5d-6566-493d-834e-90972cad49cf",
-                "position": {
-                  "x": 480,
-                  "y": 135
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              },
-              {
-                "id": "e472e152-47a5-47db-b824-19739262519b",
-                "position": {
-                  "x": 390,
-                  "y": 225
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              },
-              {
-                "id": "eee60425-f6d9-4a9a-be76-e4b25456e95a",
-                "position": {
-                  "x": 660,
-                  "y": 195
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              }
-            ],
-            "edges": [
-              {
-                "id": "0-3d2f9a5d-6566-493d-834e-90972cad49cf",
-                "source": "0",
-                "target": "3d2f9a5d-6566-493d-834e-90972cad49cf",
-                "animated": true
-              },
-              {
-                "id": "3d2f9a5d-6566-493d-834e-90972cad49cf-e472e152-47a5-47db-b824-19739262519b",
-                "source": "3d2f9a5d-6566-493d-834e-90972cad49cf",
-                "target": "e472e152-47a5-47db-b824-19739262519b",
-                "animated": true
-              },
-              {
-                "id": "3d2f9a5d-6566-493d-834e-90972cad49cf-eee60425-f6d9-4a9a-be76-e4b25456e95a",
-                "source": "3d2f9a5d-6566-493d-834e-90972cad49cf",
-                "target": "eee60425-f6d9-4a9a-be76-e4b25456e95a",
-                "animated": true
-              }
-            ]
-          }
-        },
-        {
-          "idMap": "9b4f9793-adc1-4bcc-9270-aafb18101a47",
-          "createAt": "2021-11-11 11:11:11",
-          "status": "private",
-          "title": "Có tiêu đề rồi nè",
-          "description": "Có mô tả rồi nè",
-          "data": {
-            "nodes": [
-              {
-                "id": "0",
-                "type": "input",
-                "position": {
-                  "x": 600,
-                  "y": 10
-                },
-                "data": {
-                  "label": "Parent"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                },
-                "selected": false
-              },
-              {
-                "id": "4b064ba5-9487-4112-8627-dac191bc9de1",
-                "position": {
-                  "x": 420,
-                  "y": 120
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              },
-              {
-                "id": "d210ebab-687a-4b7e-9dd2-d74317937e28",
-                "position": {
-                  "x": 360,
-                  "y": 195
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              },
-              {
-                "id": "d4703a76-d2a7-4dc2-8bd1-980ffb9da09d",
-                "position": {
-                  "x": 690,
-                  "y": 75
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              },
-              {
-                "id": "91613da3-1ffa-4891-a4ef-6e35f3c5fcbe",
-                "position": {
-                  "x": 615,
-                  "y": 165
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              }
-            ],
-            "edges": [
-              {
-                "id": "0-4b064ba5-9487-4112-8627-dac191bc9de1",
-                "source": "0",
-                "target": "4b064ba5-9487-4112-8627-dac191bc9de1",
-                "animated": true
-              },
-              {
-                "id": "4b064ba5-9487-4112-8627-dac191bc9de1-d210ebab-687a-4b7e-9dd2-d74317937e28",
-                "source": "4b064ba5-9487-4112-8627-dac191bc9de1",
-                "target": "d210ebab-687a-4b7e-9dd2-d74317937e28",
-                "animated": true
-              },
-              {
-                "id": "0-d4703a76-d2a7-4dc2-8bd1-980ffb9da09d",
-                "source": "0",
-                "target": "d4703a76-d2a7-4dc2-8bd1-980ffb9da09d",
-                "animated": true
-              },
-              {
-                "id": "d4703a76-d2a7-4dc2-8bd1-980ffb9da09d-91613da3-1ffa-4891-a4ef-6e35f3c5fcbe",
-                "source": "d4703a76-d2a7-4dc2-8bd1-980ffb9da09d",
-                "target": "91613da3-1ffa-4891-a4ef-6e35f3c5fcbe",
-                "animated": true
-              }
-            ]
-          }
-        },
-        {
-          "idMap": "1d055bd6-5927-4ef6-b06e-1a3f6016f587",
-          "createAt": "2021-11-11 11:11:11",
-          "status": "private",
           "title": "Chưa có tiêu đề 1",
-          "description": "Chưa có mô tả 1",
-          "data": {
-            "nodes": [
-              {
-                "id": "0",
-                "type": "input",
-                "position": {
-                  "x": 600,
-                  "y": 10
-                },
-                "data": {
-                  "label": "Parent"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                },
-                "selected": false
-              },
-              {
-                "id": "aa7b8469-f5b1-4bb1-814b-a86e892e225f",
-                "position": {
-                  "x": 525,
-                  "y": 75
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              }
-            ],
-            "edges": [
-              {
-                "id": "0-aa7b8469-f5b1-4bb1-814b-a86e892e225f",
-                "source": "0",
-                "target": "aa7b8469-f5b1-4bb1-814b-a86e892e225f",
-                "animated": true
-              }
-            ]
-          }
-        },
-        {
-          "idMap": "83041536-8921-480c-8a08-f8d5236170aa",
-          "createAt": "2021-11-11 11:11:11",
-          "status": "public",
-          "title": "Chưa có tiêu đề",
-          "description": "Chưa có mô tả",
-          "data": {
-            "nodes": [
-              {
-                "id": "0",
-                "type": "input",
-                "position": {
-                  "x": 600,
-                  "y": 10
-                },
-                "data": {
-                  "label": "Parent"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                },
-                "selected": false
-              }
-            ],
-            "edges": []
-          }
-        },
-        {
-          "idMap": "a28a0fb9-a496-401f-95ac-bc7588ebbc4d",
-          "createAt": "2021-11-11 11:11:11",
-          "status": "public",
-          "title": "Chưa có tiêu đề",
-          "description": "Chưa có mô tả",
-          "data": {
-            "nodes": [
-              {
-                "id": "0",
-                "type": "input",
-                "position": {
-                  "x": 600,
-                  "y": 10
-                },
-                "data": {
-                  "label": "Parent"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                },
-                "selected": false
-              }
-            ],
-            "edges": []
-          }
-        },
-        {
-          "idMap": "7319c661-859b-47d7-9cb4-f7515d658fb4",
-          "createAt": "2021-11-11 11:11:11",
-          "status": "private",
-          "title": "Chưa có tiêu đề",
           "description": "Chưa có mô tả",
           "data": {
             "nodes": [
@@ -394,13 +31,13 @@
                 "selected": false
               },
               {
-                "id": "1f00bae8-9e13-4917-acde-a36873d332ca",
+                "id": "113d40cb-c95c-498b-83b2-ddba7a1b0057",
                 "position": {
-                  "x": 525,
-                  "y": 75
+                  "x": 510,
+                  "y": 90
                 },
                 "data": {
-                  "label": "Công việc"
+                  "label": "Công việc 1"
                 },
                 "origin": [
                   0.5,
@@ -410,32 +47,14 @@
                 "measured": {
                   "width": 150,
                   "height": 40
-                }
+                },
+                "selected": false
               },
               {
-                "id": "b0e88d5c-5f7b-4315-95a0-5113195ff25a",
-                "position": {
-                  "x": 450,
-                  "y": 165
-                },
-                "data": {
-                  "label": "Công việc"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ],
-                "type": "output",
-                "measured": {
-                  "width": 150,
-                  "height": 40
-                }
-              },
-              {
-                "id": "a1efc1c0-e230-4c65-9406-c455a780e809",
+                "id": "b71dc903-ff7f-4d3f-a8eb-ab563710933e",
                 "position": {
                   "x": 390,
-                  "y": 240
+                  "y": 180
                 },
                 "data": {
                   "label": "Công việc"
@@ -453,86 +72,58 @@
             ],
             "edges": [
               {
-                "id": "0-1f00bae8-9e13-4917-acde-a36873d332ca",
+                "id": "0-113d40cb-c95c-498b-83b2-ddba7a1b0057",
                 "source": "0",
-                "target": "1f00bae8-9e13-4917-acde-a36873d332ca",
+                "target": "113d40cb-c95c-498b-83b2-ddba7a1b0057",
                 "animated": true
               },
               {
-                "id": "1f00bae8-9e13-4917-acde-a36873d332ca-b0e88d5c-5f7b-4315-95a0-5113195ff25a",
-                "source": "1f00bae8-9e13-4917-acde-a36873d332ca",
-                "target": "b0e88d5c-5f7b-4315-95a0-5113195ff25a",
-                "animated": true
-              },
-              {
-                "id": "b0e88d5c-5f7b-4315-95a0-5113195ff25a-a1efc1c0-e230-4c65-9406-c455a780e809",
-                "source": "b0e88d5c-5f7b-4315-95a0-5113195ff25a",
-                "target": "a1efc1c0-e230-4c65-9406-c455a780e809",
+                "id": "113d40cb-c95c-498b-83b2-ddba7a1b0057-b71dc903-ff7f-4d3f-a8eb-ab563710933e",
+                "source": "113d40cb-c95c-498b-83b2-ddba7a1b0057",
+                "target": "b71dc903-ff7f-4d3f-a8eb-ab563710933e",
                 "animated": true
               }
             ]
+          }
+        },
+        {
+          "idMap": "00b9535a-35ef-492f-b6c5-2dd1d5f6d2b7",
+          "createAt": "24/08/21 16-07-18",
+          "status": "public",
+          "title": "Chưa có tiêu đề",
+          "description": "Chưa có mô tả",
+          "data": {
+            "nodes": [
+              {
+                "id": "0",
+                "type": "input",
+                "position": {
+                  "x": 600,
+                  "y": 10
+                },
+                "data": {
+                  "label": "Parent"
+                },
+                "origin": [
+                  0.5,
+                  0
+                ],
+                "measured": {
+                  "width": 150,
+                  "height": 40
+                },
+                "selected": false
+              }
+            ],
+            "edges": []
           }
         }
       ],
       "id": "google-oauth2|102321598521810646645"
     },
     {
-      "id": 2,
-      "mindMapData": [
-        {
-          "idMap": 1,
-          "title": "Mind Map chưa có tên",
-          "description": "Chưa có mô tả",
-          "createAt": "2021-11-11 11:11:11",
-          "status": "public",
-          "data": {
-            "nodes": [
-              {
-                "id": "0",
-                "type": "input",
-                "position": {
-                  "x": 600,
-                  "y": 10
-                },
-                "data": {
-                  "label": "Parent"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ]
-              }
-            ],
-            "edges": []
-          }
-        },
-        {
-          "idMap": 2,
-          "title": "Mind Map chưa có tên",
-          "description": "Chưa có mô tả",
-          "createAt": "2021-11-11 11:11:11",
-          "data": {
-            "nodes": [
-              {
-                "id": "0",
-                "type": "input",
-                "position": {
-                  "x": 600,
-                  "y": 10
-                },
-                "data": {
-                  "label": "Parent"
-                },
-                "origin": [
-                  0.5,
-                  0
-                ]
-              }
-            ],
-            "edges": []
-          }
-        }
-      ]
+      "mindMapData": [],
+      "id": "google-oauth2|110790626973262040545"
     }
   ]
 }

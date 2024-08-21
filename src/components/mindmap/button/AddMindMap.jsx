@@ -2,8 +2,7 @@
 import { mindmapApi } from "@/redux/services/mindmap";
 import { v4 as uuidv4 } from "uuid";
 export default function AddMindMap({ sub }) {
-  // console.log(session);
-  // console.log(sub);
+  // console.log("sub", sub);
   const [udpateMindMapById, result] = mindmapApi.useUpdateMindMapByIdMutation();
   const {
     data: mindmap,
@@ -11,12 +10,20 @@ export default function AddMindMap({ sub }) {
     isErrorMindMap,
   } = mindmapApi.useGetMindMapByIdQuery(sub);
   let clone_mindmap = { ...mindmap };
-  const handleAddNewMindMap = () => {
-    console.log("clone mindmap", clone_mindmap);
-    // udpateMindMapById({}
+  const handleAddNewMindMap = async () => {
+    const time = new Date();
+    const year = time.getFullYear().toString().slice(-2); // Last two digits of the year
+    const month = String(time.getMonth() + 1).padStart(2, "0"); // Months are zero-based, so we add 1
+    const day = String(time.getDate()).padStart(2, "0");
+    const hours = String(time.getHours()).padStart(2, "0");
+    const minutes = String(time.getMinutes()).padStart(2, "0");
+    const seconds = String(time.getSeconds()).padStart(2, "0");
+
+    // Combine into the desired format
+    const formattedTime = `${year}/${month}/${day} ${hours}-${minutes}-${seconds}`;
     const newMindMap = {
       idMap: uuidv4(),
-      createAt: "2021-11-11 11:11:11",
+      createAt: formattedTime,
       status: "public",
       title: "Chưa có tiêu đề",
       description: "Chưa có mô tả",
@@ -43,35 +50,33 @@ export default function AddMindMap({ sub }) {
         edges: [],
       },
     };
+    // console.log("clone mindmap", clone_mindmap);
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/users/${sub}`
+    );
+    if (!response.ok) {
+      console.log("response status");
+      const data = {
+        id: sub,
+        mindMapData: [newMindMap],
+      };
+      const response1 = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/users`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+      if (response1.ok) {
+        console.log("response1 ok");
+      }
+      return;
+    }
     const newMindMapData = [...clone_mindmap.mindMapData, newMindMap];
-    // console.log("new mindMap", newMindMap);
-    // clone_mindmap.mindMapData.push(newMindMap);
     clone_mindmap.mindMapData = newMindMapData;
-    // console.log("mindmap data", clone_mindmap.mindMapData);
-    // console.log("clone_mindmap", clone_mindmap);
-
-    // const user = mindmap.mindMapData.map((item) => {
-    //   const clone_item = { ...item };
-    //   // console.log("clone_item before ", clone_item);
-    //   if (+clone_item.idMap === +id) {
-    //     // console.log("vao day");
-    //     // item.data.nodes = nodes;
-    //     // item.data.edges = edges;
-    //     clone_item.title = title;
-    //     clone_item.description = description;
-    //     clone_item.data = {
-    //       ...clone_item.data,
-    //       nodes: [...nodes], // or use a deep clone method if necessary
-    //       edges: [...edges],
-    //     };
-    //   }
-    //   return clone_item;
-    // });
-    // console.log("user", user);
-    // console.log("clone_mindmap after", clone_mindmap);
-    // clone_mindmap.mindMapData = user;
-    // console.log("clone_mindmap after", clone_mindmap);
-
     udpateMindMapById({
       id: sub,
       data: {

@@ -96,7 +96,7 @@ export default function AddNode({
   const defaultEdgeOptions = { animated: true };
   return (
     <div
-      className="w-11/12 h-5/6 border-2 p-2 mx-auto border-red-500 wrapper"
+      className="w-11/12 h-5/6 border-2 mx-auto py-4 mb-5 border-red-500 wrapper"
       ref={reactFlowWrapper}
     >
       <ReactFlow
