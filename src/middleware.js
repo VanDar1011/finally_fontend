@@ -2,9 +2,7 @@ import { getSession } from "@auth0/nextjs-auth0/edge";
 import { NextResponse } from "next/server";
 export const middleware = async (req) => {
   const path = req.nextUrl.pathname;
-  //   console.log(path);
   const idMap = path.split("/")[2];
-  //   console.log(idMap);
   const session = await getSession(req);
   const user = session?.user;
   try {
@@ -16,7 +14,7 @@ export const middleware = async (req) => {
     let ownerId;
     let status;
     data.forEach((user) => {
-      const foundMap = user.mindMapData?.find((map) => map.idMap === idMap);
+      const foundMap = user?.mindMapData?.find((map) => map.idMap === idMap);
       if (foundMap) {
         mindMap = foundMap;
         ownerId = user.id;
